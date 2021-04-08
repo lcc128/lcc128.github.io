@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉">
+<meta name="description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉。进程中有很多执行单元组成">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java一多线程">
 <meta property="og:url" content="http://yoursite.com/2020/01/06/Java一多线程/index.html">
 <meta property="og:site_name" content="Thy">
-<meta property="og:description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉">
+<meta property="og:description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉。进程中有很多执行单元组成">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-11-26T09:28:42.294Z">
+<meta property="og:image" content="http://yoursite.com/images/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%9B%BE.jpg">
+<meta property="og:updated_time" content="2020-11-27T09:21:18.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java一多线程">
-<meta name="twitter:description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉">
+<meta name="twitter:description" content="在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉。进程中有很多执行单元组成">
+<meta name="twitter:image" content="http://yoursite.com/images/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%9B%BE.jpg">
 
 
 
@@ -391,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  166
+                  1.5k
                 </span>
               
 
@@ -407,7 +409,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -429,8 +431,59 @@
 
       
         <blockquote>
-<p>在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉</p>
+<p>在计算机多任务操作系统中，计算机能够同时执行多个应用程序（进程），表面上看是支持进程并发执行的，实际上对于CPU来说，在某个时间点只能运行一个进程。操作系统会为每一个进程分配一段悠闲的CPU使用时间，CPU在这段时间中执行某个进程，然后会在下一段时间切换到另一个进程中去执行。由于CPU运行速度很快，能在极短的时间内在不同进程之间进行切换，所以给人以同时执行多个进程的感觉。进程中有很多执行单元组成，这一个个的执行单元被称为线程。</p>
 </blockquote>
+<h2 id="线程的创建"><a href="#线程的创建" class="headerlink" title="线程的创建"></a>线程的创建</h2><p>线程的创建有两种方式，一种是继承java.lang包下Thread类，重写Thread类的run（）方法。另一种是实现java.lang.Runnable接口。</p>
+<h3 id="通过继承Thread类来实现多线程"><a href="#通过继承Thread类来实现多线程" class="headerlink" title="通过继承Thread类来实现多线程"></a>通过继承Thread类来实现多线程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public static void main (String [] args)&#123;</span><br><span class="line">		Thread myThread= new Task();</span><br><span class="line">		new Thread (myThread,&quot;窗口1&quot;).start();     //给线程命名，并创建线程</span><br><span class="line">		new Thread (myThread,&quot;窗口2&quot;).start();</span><br><span class="line">		System.out.println (Thread.currentThread().getName());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Task extends Thread&#123;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		System.out.println (Thread.currentThread().getName()+&quot;执行&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过Runnable接口实现多线程"><a href="#通过Runnable接口实现多线程" class="headerlink" title="通过Runnable接口实现多线程"></a>通过Runnable接口实现多线程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">	public static void main(String[] args) throws Exception&#123;</span><br><span class="line">		Task myThread= new Task();</span><br><span class="line">		new Thread (myThread,&quot;窗口1&quot;).start();</span><br><span class="line">		new Thread (myThread,&quot;窗口2&quot;).start();</span><br><span class="line">		System.out.println (Thread.currentThread().getName());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Task implements Runnable&#123;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		System.out.println (Thread.currentThread().getName()+&quot;执行&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="线程的生命周期及其转换状态"><a href="#线程的生命周期及其转换状态" class="headerlink" title="线程的生命周期及其转换状态"></a>线程的生命周期及其转换状态</h2><p><img src="/images/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%9B%BE.jpg" alt="线程状态转换图"></p>
+<ol>
+<li><p><strong>新建状态（new）</strong>：线程对象被创建后就进入了新建状态，此时它不能进行运行，只是被Java虚拟机分配了内存。如：Thread thread = new Thread();</p>
+</li>
+<li><p><strong>就绪状态（Runnable）</strong>：也被称为“可执行状态”。线程对象被创建后，其他线程调用了该对象的start()方法，从而启动该线程。如：thread.start(); 处于就绪状态的线程随时可能被CPU调度执行。</p>
+</li>
+<li><p><strong>运行状态（Running）</strong>：线程获取CPU权限进行执行,并且开始执行run()方法中的线程执行题。需要注意的是，线程只能从就绪状态进入到运行状态。</p>
+</li>
+<li><p><strong>阻塞状态（Blocked）</strong>：阻塞状态是线程因为某种原因放弃CPU使用权限，暂时停止运行。直到线程进入就绪状态，才有机会进入运行状态。阻塞的三种情况：</p>
+<ol>
+<li><p>等待阻塞：通过调用线程的wait()方法，让线程等待某工作的完成。</p>
+</li>
+<li><p>同步阻塞：线程在获取synchronized同步锁失败（因为锁被其他线程占用），它会进入同步阻塞状态。</p>
+</li>
+<li><p>其他阻塞：通过调用线程的sleep()或join()或发出了I/O请求时，线程会进入到阻塞状态。当sleep()状态超时、join()等待线程终止或超时、或者I/O处理完毕时，线程重新转入就绪状态。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>死亡状态（Dead）</strong>：当线程调用stop（）方法或run（）方法正常执行完毕后，或线程抛出了一个未捕获的异常、错误线程进入死亡状态，该线程结束生命周期。</p>
+</li>
+</ol>
+<h2 id="线程调度"><a href="#线程调度" class="headerlink" title="线程调度"></a>线程调度</h2><p>  程序中的多个线程是并发执行的，某个线程若想被执行必须要得到CPU的使用权。</p>
+<h3 id="线程的优先级"><a href="#线程的优先级" class="headerlink" title="线程的优先级"></a>线程的优先级</h3><p>  如果要对线程进行调度，最直接的方式就是设置线程的优先级。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">	Thread maxThread= new Thread(new Task(),&quot;高优先级&quot;);</span><br><span class="line">    Thread minThread= new Thread(new Task(),&quot;低优先级&quot;);</span><br><span class="line">    maxThread.setPriority( Thread.MAX_PRIORITY );        //设置线程的优先级，默认是5，最高是10，最低是1</span><br><span class="line">    minThread.setPriority( Thread.MIN_PRIORITY );</span><br><span class="line">    maxThread.start();</span><br><span class="line">    minThread.start();</span><br><span class="line">	System.out.println (Thread.currentThread().getName());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Task implements Runnable&#123;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		System.out.println (Thread.currentThread().getName()+&quot;执行&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="线程休眠"><a href="#线程休眠" class="headerlink" title="线程休眠"></a>线程休眠</h3><p>   线程休眠可以将正在进行的线程进行暂停，将CPU让给别的线程，使用静态方法<strong>sleep(long millis)</strong>.当方法执行sleep （long millis）方法后，在指定的时间内线程是不会执行的。</p>
+<ol>
+<li>使用sleep （long millis）方法声明会抛出InterruptedExcept异常，因此在调用该方法是应该捕获异常，或者是将异常抛出。</li>
+<li>sleep （long millis）是静态方法，只能控制当前正在运行的线程休眠。线程休眠结束后返回到就绪状态，而不是立即执行。</li>
+</ol>
+<h3 id="线程插队"><a href="#线程插队" class="headerlink" title="线程插队"></a>线程插队</h3><p>   在Thread类中也提供了一个join（）方法来实现插队功能。当在某个线程中调用其他线程的join（）方法时，调用的线程将被阻塞，直到被join（）方法加入的线程执行完成后它才会继续执行运行。</p>
+<h2 id="多线程同步"><a href="#多线程同步" class="headerlink" title="多线程同步"></a>多线程同步</h2><p>当多个线程去访问一个资源时，可能会出现处理资源不符合实际情况，这需要实现多线程的同步，即限制摸个资源在同一时刻只能别一个线程访问。</p>
+<h3 id="同步代码块"><a href="#同步代码块" class="headerlink" title="同步代码块"></a>同步代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">synchronized (lock)&#123;</span><br><span class="line">    操作共享资源代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其中lock是一个锁对象，它是同步代码块的关键。当某一个线程执行同步代码块时，其他线程无法执行当前同步代码块，会发生阻塞，等当前线程执行完同步代码块后，所有线程开始抢夺线程的执行权，抢到执行权的线程会进去同步代码块，执行其中的代码。</li>
+<li>同步代码块的锁对象可以是任意类型的对象，单多个线程共享的锁对象必须是唯一的。</li>
+<li>锁对象的创建代码不能放入run（）方法中。</li>
+</ul>
+<h3 id="同步方法"><a href="#同步方法" class="headerlink" title="同步方法"></a>同步方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">synchronized 返回值类型 方法名 （[参数1]···）&#123;</span><br><span class="line">    操作代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>synchronized修饰静态方法，如果调用该静态方法，将锁住整个类。</p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ul>
+<li>同步方法默认用this或者当前类class对象作为锁。</li>
+<li>同步代码块可以选择以什么来加锁，比同步方法要更颗粒化，我们可以选择只同步会发生问题的部分代码而不是整个方法。</li>
+</ul>
 
       
     </div>
@@ -536,8 +589,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -604,6 +666,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#线程的创建"><span class="nav-number">1.</span> <span class="nav-text">线程的创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过继承Thread类来实现多线程"><span class="nav-number">1.1.</span> <span class="nav-text">通过继承Thread类来实现多线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过Runnable接口实现多线程"><span class="nav-number">1.2.</span> <span class="nav-text">通过Runnable接口实现多线程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线程的生命周期及其转换状态"><span class="nav-number">2.</span> <span class="nav-text">线程的生命周期及其转换状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线程调度"><span class="nav-number">3.</span> <span class="nav-text">线程调度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线程的优先级"><span class="nav-number">3.1.</span> <span class="nav-text">线程的优先级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程休眠"><span class="nav-number">3.2.</span> <span class="nav-text">线程休眠</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程插队"><span class="nav-number">3.3.</span> <span class="nav-text">线程插队</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多线程同步"><span class="nav-number">4.</span> <span class="nav-text">多线程同步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#同步代码块"><span class="nav-number">4.1.</span> <span class="nav-text">同步代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步方法"><span class="nav-number">4.2.</span> <span class="nav-text">同步方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区别"><span class="nav-number">4.3.</span> <span class="nav-text">区别</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -619,7 +697,7 @@
       <div class="footer-inner">
         ﻿<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
