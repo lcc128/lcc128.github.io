@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/%E9%9B%86%E5%90%88%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="og:image" content="http://yoursite.com/images/HashSet.png">
-<meta property="og:updated_time" content="2021-04-08T05:33:17.377Z">
+<meta property="og:updated_time" content="2021-04-15T10:04:36.307Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java一集合类">
 <meta name="twitter:description" content="在程序中可以用数组来保存多个对象，但在某些情况下无法确定保存对象的个数，此时则需要以集合的形式进行数据保存。在Java程序中，可以存储任何类型的对象，且长度可以改变，这种类统称为集合。集合按照存储结构可以分为两大类，即单列集合Collection和双列集合Map。   Collection集合 Collection:单列集合类的根接口，用于存储一系列复合某种规则的元素，有两个重要的子接口，分别为">
@@ -394,7 +394,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  1.7k
                 </span>
               
 
@@ -485,6 +485,10 @@
 <td>int size()</td>
 <td>获取该集合元素的个数。</td>
 </tr>
+<tr>
+<td>Collections.sort(Lise list)</td>
+<td>按照字母进行排序</td>
+</tr>
 </tbody></table>
 <h3 id="List接口"><a href="#List接口" class="headerlink" title="List接口"></a>List接口</h3><blockquote>
 <p><strong>List</strong>接口继承自Collection接口，其特点是元素有序，可重复。存储方式 是元素以一种线性方式进行存储。List接口的主要实现类有<strong>ArrayList</strong>和<strong>LinkedList</strong>。</p>
@@ -552,6 +556,9 @@
 <td>修改指定位置的元素</td>
 </tr>
 </tbody></table>
+<p><strong>ArrayList遍历</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//第一种遍历，for方法</span><br><span class="line"> for(int i=0;i&lt; arr.size();i++)&#123;</span><br><span class="line">       System.out.println(arr.get(i)); </span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">//第二种遍历 ，for each方法</span><br><span class="line">for (String str:arr) &#123;</span><br><span class="line">      System.out.println(str);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">//第三种遍历 Iterator迭代器</span><br><span class="line">Iterator iterator=arr.iterator();</span><br><span class="line">   while(iterator.hasNext())&#123;</span><br><span class="line">      System.out.println(iterator.next());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
 <h4 id="LinkedList集合"><a href="#LinkedList集合" class="headerlink" title="LinkedList集合"></a>LinkedList集合</h4><blockquote>
 <p><strong>LinkedList</strong>集合内部存放着一个双向循环链表，所以跟适合元素的添加和删除。</p>
 </blockquote>
@@ -610,6 +617,9 @@
 <td>若确定哈希值相同，则调用该方法来确保没有重复元素。</td>
 </tr>
 </tbody></table>
+<p><strong>HashSet遍历</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//第一种遍历 for-each方法</span><br><span class="line">for(String str:hashset)&#123;</span><br><span class="line">      System.out.println(str);</span><br><span class="line">   &#125;</span><br><span class="line">//第二种 Iterator迭代器遍历</span><br><span class="line">   Iterator&lt;String&gt; iterator=hashset.iterator();</span><br><span class="line">   while(iterator.hasNext())&#123;</span><br><span class="line">      System.out.println(iterator.next());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="Map集合"><a href="#Map集合" class="headerlink" title="Map集合"></a>Map集合</h2><blockquote>
 <p><strong>Map</strong>:双列集合类的根接口，用于存储具有键（Key）、值（Value）映射关系的元素，每个元素都包含一对键值，使用Key可以找到相应的Value值。</p>
 </blockquote>
@@ -657,7 +667,7 @@
 <p><strong>HashMap</strong>是Map接口的一个实现类，用于存储键值映射关系。</p>
 </blockquote>
 <p>HashSet的遍历方式有二种，代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//第一种，先调用Map对象的KeySet（）获取键，在迭代器中在使用get(String key)获取键对应的值。输出结果是倒叙的</span><br><span class="line">Map m = new HashMap ();            //创建Map集合</span><br><span class="line">   ...                             //添加内容</span><br><span class="line">Set k= m.KeySet();                  //获取键的集合</span><br><span class="line">Iterator i = k.iterator();           //获取代键的集合</span><br><span class="line">while ( i.hasNext() ) &#123;</span><br><span class="line">    Object key = i.next();</span><br><span class="line">    Object value = m.get(key);</span><br><span class="line">    System.out.println ( key + &quot;:&quot; value );</span><br><span class="line">    &#125;</span><br><span class="line">//第二种，使用HashMap的子类LinkedHsahMap类，在使用迭代。输出结果是正序的。</span><br><span class="line">Map m = new LinkedHashMap ();      //创建Map集合</span><br><span class="line">   ...                             //添加内容</span><br><span class="line">Set k = m.keySet();</span><br><span class="line">Iterator i= k.iterator();</span><br><span class="line">while( i.hasNext() ) &#123;</span><br><span class="line">   Object key = i.next();</span><br><span class="line">   Object value = m.get(key);</span><br><span class="line">   System.out.println(key + &quot;:&quot; + value);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//第一种 for-each方法遍历</span><br><span class="line">for (String key:hash.keySet())&#123;</span><br><span class="line">      System.out.println(&quot;Key:&quot;+key+&quot;  Value:&quot;+hash.get(key)); </span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">//第二种 通过Map的entrySet方法  容量大时这种方法遍历最快</span><br><span class="line">for(Map.Entry&lt;String,String&gt;entry:hash.entrySet())&#123;</span><br><span class="line">      System.out.println(&quot;Key :&quot;+entry.getKey()+&quot; Value:&quot;+entry.getValue());</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">//第三种 Iterator迭代器 keySet()方法遍历</span><br><span class="line">Iterator &lt;String&gt; iter= hash.keySet().iterator();</span><br><span class="line">while(iter.hasNext())&#123;</span><br><span class="line">      String key=iter.next();</span><br><span class="line">      System.out.println(&quot;Key :&quot;+key+&quot; Value:&quot;+hash.get(key));</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">//第四种 Iterator迭代器 entrySet()方法遍历</span><br><span class="line">Iterator iter1=hash.entrySet().iterator();</span><br><span class="line">   while(iter1.hasNext())&#123;</span><br><span class="line">      Map.Entry&lt;String,String&gt; entry=(Map.Entry&lt;String,String&gt;)iter1.next();</span><br><span class="line">      System.out.println(&quot;Key :&quot;+entry.getKey()+&quot; Value:&quot;+entry.getValue()); </span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Hashtable集合"><a href="#Hashtable集合" class="headerlink" title="Hashtable集合"></a>Hashtable集合</h3><blockquote>
 <p><strong>Hashtable</strong>集合和HashMap集合非常相似，区别在于Hashtable是线程安全的。而它存取速度很慢，所以大部分已被HashMap代替。</p>
@@ -837,7 +847,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -848,7 +858,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -859,7 +869,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
