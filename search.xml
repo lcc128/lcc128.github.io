@@ -29,31 +29,6 @@
     
     
     <entry>
-      <title>Java一注解</title>
-      <link href="/2021/04/28/Java%E2%80%94%E6%B3%A8%E9%87%8A/"/>
-      <url>/2021/04/28/Java%E2%80%94%E6%B3%A8%E9%87%8A/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><strong>java 注解</strong>，从名字上看是注释，解释。但功能却不仅仅是注释那么简单。注解（Annotation）为我们在代码中添加信息提供了一种形式化的方法，是我们可以在稍后 某个时刻方便地使用这些数据（通过 解析注解 来使用这些数据）。</p></blockquote><h2 id="SpringBoot注解"><a href="#SpringBoot注解" class="headerlink" title="SpringBoot注解"></a>SpringBoot注解</h2><table><thead><tr><th>注解格式</th><th>作用</th></tr></thead><tbody><tr><td>@ConfigurationProperties(prefix = “persion”)</td><td>引用yaml配置文件中的数据</td></tr><tr><td>@Validated</td><td>数据效验，具体注解请查看JSR-303校验</td></tr></tbody></table>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>StringBoot一Web</title>
       <link href="/2021/04/28/StringBoot%E2%80%94Web/"/>
       <url>/2021/04/28/StringBoot%E2%80%94Web/</url>
