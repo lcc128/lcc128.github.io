@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Thy">
 <meta property="og:description" content="Ajax即Asynchronous Javascript And XML（异步JavaScript和XML）,是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。  jspjsp导入静态资源 1&amp;lt;script src=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/static/js.jquery.js&quot;/&amp;gt;  JsonJson使">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2022-03-07T03:45:59.281Z">
+<meta property="og:updated_time" content="2022-03-10T12:24:07.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ajax—Web数据交互方法">
 <meta name="twitter:description" content="Ajax即Asynchronous Javascript And XML（异步JavaScript和XML）,是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。  jspjsp导入静态资源 1&amp;lt;script src=&quot;$&amp;#123;pageContext.request.contextPath&amp;#125;/static/js.jquery.js&quot;/&amp;gt;  JsonJson使">
@@ -391,7 +391,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  131
+                  156
                 </span>
               
 
@@ -436,6 +436,9 @@
 
 <h2 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h2><p>Json使用{}包裹起来，使用：区分key、value，多个值用逗号分开，且最后一个值不加逗号。<br>{“name”:”张三”,”sex”:”男”,”age”:18}</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//将js对象转换成JSON字符串</span><br><span class="line">var obj = Json.stringify( js对象 );</span><br><span class="line"></span><br><span class="line">//将JSON字符串转换成js对象</span><br><span class="line">var obj = Json.parse( json字符串 );</span><br></pre></td></tr></table></figure>
+
+<h3 id="Json解析工具"><a href="#Json解析工具" class="headerlink" title="Json解析工具"></a>Json解析工具</h3><p>Jackson</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ObjectMapper mapper=new ObjectMapper();</span><br><span class="line">User user=new User();</span><br><span class="line">//将user对象转化成json数据</span><br><span class="line">String str=mapper.writeValueAstoString();</span><br></pre></td></tr></table></figure>
       
     </div>
 <div>
@@ -565,7 +568,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -576,7 +579,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -587,7 +590,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -626,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jsp"><span class="nav-number">1.</span> <span class="nav-text">jsp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Json"><span class="nav-number">2.</span> <span class="nav-text">Json</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#jsp"><span class="nav-number">1.</span> <span class="nav-text">jsp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Json"><span class="nav-number">2.</span> <span class="nav-text">Json</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Json解析工具"><span class="nav-number">2.1.</span> <span class="nav-text">Json解析工具</span></a></li></ol></li></ol></div>
             
 
           </div>
