@@ -477,7 +477,7 @@
 <p>（1）执行try语句。<br>（2）如果没有异常，当try执行完毕时就算完成了。<br>（3）如果在执行try语句的时候，出现了异常，就在catch中声明的异常依次进行匹配（catch括号里面的），如果匹配成功，就执行针对这种异常的处理方案；如果没有匹配成功，就按照jvm默认的处理方式来处理</p>
 </blockquote>
 <h4 id="try…catch…finally"><a href="#try…catch…finally" class="headerlink" title="try…catch…finally"></a>try…catch…finally</h4><p>格式：</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line"> 	可能出现异常的代码</span><br><span class="line">&#125; <span class="keyword">catch</span> (可能出现的异常类型 异常名称) &#123;</span><br><span class="line"> 	这种异常的处理方案</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"> 	一定会执行的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line"> 	可能出现异常的代码</span><br><span class="line">&#125; <span class="keyword">catch</span> (可能出现的异常类型 异常名称) &#123;</span><br><span class="line"> 	这种异常的处理方案</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"> 	一定会执行的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>执行流程：</p>
 <blockquote>
@@ -485,7 +485,7 @@
 </blockquote>
 <p>finally作用：一般用来关闭资源。</p>
 <h4 id="try…finally"><a href="#try…finally" class="headerlink" title="try…finally"></a>try…finally</h4><p>格式：</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line"> 	 	可能出现异常的代码</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"> 	一定要执行的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line"> 	 	可能出现异常的代码</span><br><span class="line">&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line"> 	一定要执行的代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>作用：</p>
 <blockquote>
